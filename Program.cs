@@ -35,6 +35,18 @@ void PrintStringArray(string[] array)
     System.Console.WriteLine("]");
 }
 
+// Для тестирования программы написаны три входных массива. 
+// Раскомментируйте для тестирования нужную строку с входным массивом и закомментируйте ту, 
+// что использовалась ранее; Вы можете задать свой собственный массив на вход программы по данным примерам;
+
+string[] stringArray = new string[] { "Size",":-)", "^-^", "Михайловка", "Bob", "Москва", "Нож", "3", "ABC", "Loo", "-4", "1457", "add", "Ярославль", "И2", "Texas"};
+// string[] stringArray = new string[] {"Russia", "Denmark", "Kazan"};
+// string[] stringArray = new string[] {"1234", "1567", "-2", "computer science"};
+string[] newStringArray = SelectRowsByLength(stringArray, 3);
+System.Console.WriteLine("Входной массив строк:");
+PrintStringArray(stringArray);
+System.Console.WriteLine("Выходной массив строк:");
+PrintStringArray(newStringArray);
 
 
 
